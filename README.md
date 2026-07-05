@@ -38,10 +38,10 @@ The goal is to understand demand patterns and support cash logistics planning.
 
 <img width="844" height="233" alt="image" src="https://github.com/user-attachments/assets/6c38bce3-67c2-46e1-87d5-74f8a2c82d83" />
 
-2.Linear interpolation for missing values
+2. Linear interpolation for missing values
 
 <img width="861" height="373" alt="image" src="https://github.com/user-attachments/assets/b8c9e670-3add-4385-9559-b68c747d8178" />
-3.Seasonality analysis
+3. Seasonality analysis
 
 <img width="767" height="319" alt="image" src="https://github.com/user-attachments/assets/53e0462a-ef4e-41fc-995d-73f4bdca4e6c" />
 4. Statistical tests
