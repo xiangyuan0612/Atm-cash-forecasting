@@ -34,7 +34,8 @@ The goal is to understand demand patterns and support cash logistics planning.
 
 ## 📉 Visualizations
 
-(Add your figures here later)
+<img width="844" height="233" alt="image" src="https://github.com/user-attachments/assets/6c38bce3-67c2-46e1-87d5-74f8a2c82d83" />
+
 
 - Time series trend
 - Decomposition results
