@@ -113,29 +113,10 @@ The dataset exhibits:
 - A slight increasing trend over time  
 - A significant structural level shift  
 - Strong multiplicative seasonality (seasonal effect increases with demand level)  
-
-The average cash demand in 1997–1998 is significantly higher than in 1996, indicating a structural change in demand behavior.
+- The average cash demand in 1997–1998 is significantly higher than in 1996, indicating a structural change in demand behavior.
 
 Both **ADF and KPSS tests** were used to evaluate stationarity and guide model selection.
 
-### 📈 Final Model Selection
-
-Two SARIMA models are identified as optimal based on performance metrics:
-
-- SARIMA(0,0,1)(0,1,1)
-- SARIMA(3,0,1)(4,1,1)
-
-These models provide the best trade-off across:
-- AIC
-- RMSE
-- MAE
-- MAPE
-
----
-
-
-
----
 
 ## 💡 Business Insight
 - ATM cash demand is highly seasonal
