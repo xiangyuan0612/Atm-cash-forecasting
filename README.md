@@ -34,41 +34,104 @@ The goal is to understand demand patterns and support cash logistics planning.
 
 ## 📉 Visualizations
 
-1. Exploratory Data Analysis
+## 1️⃣ Exploratory Data Analysis
 
-<img width="844" height="233" alt="image" src="https://github.com/user-attachments/assets/6c38bce3-67c2-46e1-87d5-74f8a2c82d83" />
+Understanding the overall structure and behavior of ATM cash demand time series.
 
-2. Linear interpolation for missing values
+<img width="844" alt="EDA" src="https://github.com/user-attachments/assets/6c38bce3-67c2-46e1-87d5-74f8a2c82d83" />
 
-<img width="861" height="373" alt="image" src="https://github.com/user-attachments/assets/b8c9e670-3add-4385-9559-b68c747d8178" />
-3. Seasonality analysis
+---
 
-<img width="767" height="319" alt="image" src="https://github.com/user-attachments/assets/53e0462a-ef4e-41fc-995d-73f4bdca4e6c" />
-4. Statistical tests
-<img width="804" height="176" alt="image" src="https://github.com/user-attachments/assets/0dfa0dcf-5965-4da1-a8c5-1d2c09deae6b" />
-5. Differenced data
-<img width="886" height="549" alt="image" src="https://github.com/user-attachments/assets/b561778a-f19a-4126-aa93-297119f0d5a6" />
-6.ACF Analysis
-<img width="869" height="291" alt="image" src="https://github.com/user-attachments/assets/e08ab70a-9078-493c-957e-f5f5acc8405d" />
-<img width="819" height="390" alt="image" src="https://github.com/user-attachments/assets/eb1c335f-baf8-4372-b18c-c708cc9dcf15" />
-7. Time Series Decomposition
-<img width="801" height="462" alt="image" src="https://github.com/user-attachments/assets/bc813e96-dd6c-4e1f-8523-db514a06bf86" />
-<img width="800" height="306" alt="image" src="https://github.com/user-attachments/assets/fffb94b8-b157-4afc-8330-e884c9de605a" />
+## 2️⃣ Missing Value Treatment (Linear Interpolation)
 
-8. Forecasting Model
-<img width="834" height="326" alt="image" src="https://github.com/user-attachments/assets/43f94060-fe98-4cdf-9b7f-172e927be77f" />
-<img width="575" height="182" alt="image" src="https://github.com/user-attachments/assets/2679504b-4057-4a0e-bd34-061207f2beed" />
+Handling missing observations using interpolation to preserve time series continuity.
 
-<img width="757" height="258" alt="image" src="https://github.com/user-attachments/assets/186f0f42-96ac-43b8-9f1f-eb2a2123f904" />
+<img width="861" alt="Missing Data Imputation" src="https://github.com/user-attachments/assets/b8c9e670-3add-4385-9559-b68c747d8178" />
 
-Overall
-There is a slight increasing trend in the dataset, a significant level shift and a multiplicative
-seasonality since when cash demand volume grows, the seasonal effect gets bigger. The average cash
-money demand in 1997 and 1998 almost doubled compared with the average cash money demand of
-1996. KPSS and ADF tests are also used to test whether the original and differenced data are
-stationary or not, which is helpful for manual order selection in SARIMA models. Finally, SARIMA
-(0,0,1)(0,1,1) and SARIMA(3,0,1)(4,1,1) models could be used to predict future values as these two
-models has the lowest AIC, and RMSE, MAPE, and MAE, respectively.
+---
+
+## 3️⃣ Seasonality Analysis
+
+Identification of strong weekly patterns and seasonal structure in cash demand.
+
+<img width="767" alt="Seasonality" src="https://github.com/user-attachments/assets/53e0462a-ef4e-41fc-995d-73f4bdca4e6c" />
+
+---
+
+## 4️⃣ Statistical Tests (ADF & KPSS)
+
+Testing stationarity to determine appropriate time series modeling strategy.
+
+<img width="804" alt="Statistical Tests" src="https://github.com/user-attachments/assets/0dfa0dcf-5965-4da1-a8c5-1d2c09deae6b" />
+
+---
+
+## 5️⃣ Differenced Time Series
+
+Transformation applied to achieve stationarity before modeling.
+
+<img width="886" alt="Differenced Data" src="https://github.com/user-attachments/assets/b561778a-f19a-4126-aa93-297119f0d5a6" />
+
+---
+
+## 6️⃣ ACF / PACF Analysis
+
+Autocorrelation diagnostics used for SARIMA model identification.
+
+<img width="869" alt="ACF PACF 1" src="https://github.com/user-attachments/assets/e08ab70a-9078-493c-957e-f5f5acc8405d" />
+
+<img width="819" alt="ACF PACF 2" src="https://github.com/user-attachments/assets/eb1c335f-baf8-4372-b18c-c708cc9dcf15" />
+
+---
+
+## 7️⃣ Time Series Decomposition
+
+Decomposing trend, seasonality, and residual components.
+
+<img width="801" alt="Decomposition 1" src="https://github.com/user-attachments/assets/bc813e96-dd6c-4e1f-8523-db514a06bf86" />
+
+<img width="800" alt="Decomposition 2" src="https://github.com/user-attachments/assets/fffb94b8-b157-4afc-8330-e884c9de605a" />
+
+---
+
+## 8️⃣ Forecasting Results
+
+Model-based prediction of future ATM cash demand using SARIMA models.
+
+<img width="834" alt="Forecast 1" src="https://github.com/user-attachments/assets/43f94060-fe98-4cdf-9b7f-172e927be77f" />
+
+<img width="575" alt="Forecast 2" src="https://github.com/user-attachments/assets/2679504b-4057-4a0e-bd34-061207f2beed" />
+
+<img width="757" alt="Forecast 3" src="https://github.com/user-attachments/assets/186f0f42-96ac-43b8-9f1f-eb2a2123f904" />
+
+---
+
+## 📌 Overall Conclusion
+
+The dataset exhibits:
+
+- A slight increasing trend over time  
+- A significant structural level shift  
+- Strong multiplicative seasonality (seasonal effect increases with demand level)  
+
+The average cash demand in 1997–1998 is significantly higher than in 1996, indicating a structural change in demand behavior.
+
+Both **ADF and KPSS tests** were used to evaluate stationarity and guide model selection.
+
+### 📈 Final Model Selection
+
+Two SARIMA models are identified as optimal based on performance metrics:
+
+- SARIMA(0,0,1)(0,1,1)
+- SARIMA(3,0,1)(4,1,1)
+
+These models provide the best trade-off across:
+- AIC
+- RMSE
+- MAE
+- MAPE
+
+---
 
 
 
