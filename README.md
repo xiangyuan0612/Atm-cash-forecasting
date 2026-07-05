@@ -70,18 +70,6 @@ models has the lowest AIC, and RMSE, MAPE, and MAE, respectively.
 
 
 
-
-
-
-
-
-
-
-- Time series trend
-- Decomposition results
-- ACF / PACF plots
-- Forecast vs actual
-
 ---
 
 ## 💡 Business Insight
